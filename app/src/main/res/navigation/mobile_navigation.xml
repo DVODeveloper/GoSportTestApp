@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/pizzaMenuFragment">
+
+    <fragment
+        android:id="@+id/pizzaMenuFragment"
+        android:name="com.example.gosporttestapp.presentation.fragments.menu.PizzaMenuFragment.PizzaMenuFragment"
+        android:label="fragment_pizza_menu"
+        tools:layout="@layout/fragment_pizza_menu" />
+    <fragment
+        android:id="@+id/pizzaProfileFragment"
+        android:name="com.example.gosporttestapp.presentation.fragments.menu.PizzaProfileFragment.PizzaProfileFragment"
+        android:label="fragment_pizza_profile"
+        tools:layout="@layout/fragment_pizza_profile" />
+    <fragment
+        android:id="@+id/pizzaBasketFragment"
+        android:name="com.example.gosporttestapp.presentation.fragments.menu.PizzaBasketFragment.PizzaBasketFragment"
+        android:label="fragment_pizza_basket"
+        tools:layout="@layout/fragment_pizza_basket" />
+</navigation>

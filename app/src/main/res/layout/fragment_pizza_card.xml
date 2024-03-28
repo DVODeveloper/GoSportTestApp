@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pizzaCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3dp"
+    tools:context=".presentation.fragments.PizzaCardFragment.PizzaCardFragment">
+
+    <TextView
+        android:id="@+id/idPizzaInCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text=""
+        android:visibility="gone"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="@dimen/_0dp"/>
+
+    <ImageView
+        android:id="@+id/pizzaImage"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:src="@drawable/pizza1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titlePizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22dp"
+        android:text="@string/ВетчинаИГрибы"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pizzaImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pizzaDescription"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:text="@string/СоставПиццы1"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/titlePizza"
+        app:layout_constraintTop_toBottomOf="@+id/titlePizza" />
+
+    <TextView
+        android:id="@+id/pizzaPrice"
+        android:layout_width="@dimen/_87dp"
+        android:layout_height="@dimen/_32dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/rectangleprice"
+        android:gravity="center"
+        android:text="@string/pizzaPrice"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/pizzaDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

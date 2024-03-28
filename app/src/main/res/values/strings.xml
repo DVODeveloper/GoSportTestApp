@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">GoSportTestApp</string>
+    <string name="ВетчинаИГрибы">Ветчина и грибы</string>
+    <string name="СоставПиццы1">Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус</string>
+    <string name="pizzaPrice">от 345 р</string>
+    <string name="Меню">Меню</string>
+    <string name="Профиль">Профиль</string>
+    <string name="Корзина">Корзина</string>
+    <string name="pizzamenufragment">PizzaMenuFragment</string>
+    <string name="Пицца">Пицца</string>
+    <string name="Комбо">Комбо</string>
+    <string name="Десерты">Десерты</string>
+    <string name="Напитки">Напитки</string>
+    <string name="Мороженое">Мороженое</string>
+
+
+    <array name="spinner_values">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Казань</item>
+        <item>Ворожен</item>
+    </array>
 </resources>
