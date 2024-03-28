@@ -7,16 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gosporttestapp.R
 import com.example.gosporttestapp.data.repository.PizzaListRepositoryImpl
 import com.example.gosporttestapp.databinding.FragmentPizzaMenuBinding
-import com.example.gosporttestapp.presentation.adapter.PizzaListAdapter
 import com.example.gosporttestapp.presentation.fragments.TopBannerFragment.TopBannerFragment
 import com.example.gosporttestapp.presentation.fragments.TopMenuTips.TopMenuTipsFragment
 import com.example.gosporttestapp.presentation.fragments.menu.TopMenuHorizontal.TopMenuHorizontalFragment
-import kotlinx.coroutines.launch
 
 class PizzaMenuFragment : Fragment() {
       private lateinit var adapter: PizzaListAdapter
